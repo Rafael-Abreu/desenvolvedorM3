@@ -1,8 +1,8 @@
-const bagList = document.querySelector('.bag-list');
 const bagContainer = document.querySelector('.bag-container');
 const productList = document.querySelector('.product-lista');
-const bagCountInfo = document.getElementById('bag-count-info');
+const bagList = document.querySelector('.bag-list');
 const bagTotalValue = document.getElementById('bag-total-value');
+const bagCountInfo = document.getElementById('bag-count-info');
 
 
 let bagItemId = 1;
@@ -38,13 +38,13 @@ function loadJSON(){
   .then(response => response.json())
   .then(data => {
     let html = '';
-    data.forEach(products => {
+    data.forEach(product => {
       html += `
-        <div class="product-vitrine ${products.color} ${products.size} ${products.price}">
-          <img src="${products.image}" alt="imagem do produto">
-          <h3>${products.name}</h3>
-          <span>R$ ${products.price}</span>
-          <p>${products.parcelamento}</p>
+        <div class="product-vitrine ${product.color} ${product.size} ${product.price}">
+          <img src="${product.image}" alt="imagem do produto">
+          <h3>${product.name}</h3>
+          <span>R$ ${product.price}</span>
+          <p>${product.parcelamento}</p>
           <button class="add-to-bag-btn">Comprar</button>
         </div>
       `;
@@ -56,15 +56,15 @@ function loadJSON(){
 
 function addProduct(e){
   if(e.target.classList.contains('add-to-bag-btn')){
-    let Product = e.target.parentElement;
-    getProductInfo(Product);
+    let product = e.target.parentElement;
+    getProductInfo(product);
   }
 }
 
 function getProductInfo(product){
   let productInfo = {
     id: bagItemId,
-    image: product.querySelector('.product-vitrine img').src,
+    imgSrc: product.querySelector('.product-vitrine img').src,
     name: product.querySelector('.product-vitrine h3').textContent,
     price: product.querySelector('.product-vitrine span').textContent
   }
@@ -141,48 +141,4 @@ function deleteProduct(e){
   localStorage.setItem('product', JSON.stringify(updatedProduct));
 
   updateBagInfo()
-}
-
-//Filter responsivo
-
-
-function initFilterContent() {
-
-  const filterTitle = document.querySelectorAll('.js-side-nav dt')
-
-  const appearClass = 'appear';
-  
-  if(filterTitle.length) {
-    
-    function appearInfo() {
-      this.classList.toggle(appearClass);
-      this.nextElementSibling.classList.toggle(appearClass)
-    }
-    
-    filterTitle.forEach((item) =>{
-      item.addEventListener('click', appearInfo)
-    })
-  } 
-} initFilterContent();
-
-function initFilterNav() {
-    var element = document.querySelector(".side-nav");
-    element.classList.add("appear");
-  }
-
-function closeFilterNav() {
-  var element = document.querySelector(".side-nav");
-  element.classList.remove("appear");
-}
-
-//Ordenar responsivo
-
-function initOrderNav() {
-  var element = document.querySelector(".dropdown");
-  element.classList.add("appear");
-}
-
-function closeOrderNav() {
-var element = document.querySelector(".dropdown");
-element.classList.remove("appear");
 }
