@@ -48,7 +48,7 @@ function loadJSON(){
     let html = '';
     data.forEach(products => {
       html += `
-        <div class="product-vitrine ${products.color} ${products.size} ${products.price}">
+        <div class="product-vitrine ${products.color} ${products.size} ${products.price }">
           <img src="${products.image}" alt="imagem do produto">
           <h3>${products.name}</h3>
           <span>R$ ${products.price}</span>

@@ -152,7 +152,7 @@ function initFilterContent() {
 function initFilterNav() {
     var element = document.querySelector(".side-nav");
     element.classList.add("appear");
-  }
+  } 
 
 function closeFilterNav() {
   var element = document.querySelector(".side-nav");
