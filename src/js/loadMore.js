@@ -1,4 +1,5 @@
-function loadMore(){
+export function loadMore()
+{function loadMore(){
 
     $(".carregar-mais").on("click", function(e){
       e.preventDefault();
@@ -6,4 +7,4 @@ function loadMore(){
     });
   
   
-  }loadMore();
+  }loadMore();}

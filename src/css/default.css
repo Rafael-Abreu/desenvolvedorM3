@@ -26,6 +26,15 @@
   
     font-family: "Open Sans", sans-serif;
   }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
   
   button,
   input {
@@ -36,11 +45,6 @@
     list-style: none;
   }
   
-  a {
-    text-decoration: none;
-  }
+ 
   
-  img {
-    display: block;
-    width: 100%;
-  }
+ 

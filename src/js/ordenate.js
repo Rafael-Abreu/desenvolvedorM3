@@ -1,5 +1,7 @@
-function orderByLowerPrice() {
-    fetch('db.json')
+export function ordanateFunction()
+
+{function orderByLowerPrice() {
+    fetch('http://localhost:5000/products')
     .then(response => response.json())
     .then(function (data) {
       data.sort(function(a, b) {
@@ -23,7 +25,7 @@ function orderByLowerPrice() {
   }
   
   function orderByHigherPrice() {
-    fetch('db.json')
+    fetch('http://localhost:5000/products')
     .then(response => response.json())
     .then(function (data) {
       data.sort(function(a, b) {
@@ -47,7 +49,7 @@ function orderByLowerPrice() {
   }
   
   function orderByTime() {
-    fetch('db.json')
+    fetch('http://localhost:5000/products')
     .then(response => response.json())
     .then(function (data) {
       data.sort(function(a, b) {
@@ -80,4 +82,4 @@ function orderByLowerPrice() {
   function closeOrderNav() {
   var element = document.querySelector(".dropdown");
   element.classList.remove("appear");
-  }
+  }}

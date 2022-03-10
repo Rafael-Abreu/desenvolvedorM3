@@ -1,4 +1,5 @@
-function filterSelectionColor(e) {
+export function filterFunction()
+{function filterSelectionColor(e) {
     var x, i;
     x = document.getElementsByClassName("product-vitrine");
     if (e == "all") e = "";
@@ -156,4 +157,4 @@ function initFilterNav() {
 function closeFilterNav() {
   var element = document.querySelector(".side-nav");
   element.classList.remove("appear");
-}
+}}

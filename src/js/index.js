@@ -1,6 +1,10 @@
+import { filterFunction } from "./filter";
+import { loadMore } from "./loadMore";
+import { ordanateFunction } from "./ordenate";
+
 const bagList = document.querySelector('.bag-list');
 const bagContainer = document.querySelector('.bag-container');
-const productList = document.querySelector('.product-lista');
+const productList = document.querySelector('.product-list');
 const bagCountInfo = document.getElementById('bag-count-info');
 const bagTotalValue = document.getElementById('bag-total-value');
 
@@ -15,6 +19,10 @@ function eventListener(){
   window.addEventListener('DOMContentLoaded', () => {
     loadJSON();
     loadBag();
+    filterFunction();
+    loadMore();
+    ordanateFunction();
+
     
   });
   document.getElementById('bag-btn').addEventListener('click', () => {
@@ -34,7 +42,7 @@ function updateBagInfo(){
 updateBagInfo()
 
 function loadJSON(){
-  fetch('db.json')
+  fetch('http://localhost:5000/products')
   .then(response => response.json())
   .then(data => {
     let html = '';
