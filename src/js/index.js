@@ -89,7 +89,7 @@ function addToBagList(product){
     <img src="${product.image}" alt="${product.name}">
     <div class="bag-item-info">
       <h3 class="bag-item-name">${product.name}</h3>
-      <span class="bag-item-price">R$${product.price}</span>
+      <span class="bag-item-price">${product.price}</span>
     </div>
     <button type="button" class="bag-item-del-btn">X</button>
   `;

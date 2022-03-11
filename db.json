@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "Camiseta Mescla",
-      "price": "R$ 28,00",
+      "price": "28,00",
       "parcelamento": ["até 3x de R$9,33"],
       "color": "Cinza",
       "image": "/img/camiseta-mescla.png",
@@ -13,7 +13,7 @@
     {
       "id": "2",
       "name": "Saia em couro",
-      "price": "R$ 398,00",
+      "price": "398,00",
       "parcelamento": ["até 5x de R$30,00"],
       "color": "Preto",
       "image": "/img/saia-em-couro.png",
@@ -23,7 +23,7 @@
     {
       "id": "3",
       "name": "Cardigan Tigre",
-      "price": "R$ 398,00",
+      "price": "398,00",
       "parcelamento": ["até 5x de R$30,00"],
       "color": "Laranja",
       "image": "/img/cardigan-tigre.png",
@@ -33,7 +33,7 @@
     {
       "id": "4",
       "name": "Cardigan off white",
-      "price": "R$ 99,90",
+      "price": "99,90",
       "parcelamento": ["até 3x de R$33,30"],
       "color": "Branco",
       "image": "/img/cardigan-off-white.png",
@@ -43,7 +43,7 @@
     {
       "id": "5",
       "name": "Body Leopardo",
-      "price": "R$ 129,90",
+      "price": "129,90",
       "parcelamento": ["até 3x de R$43,43"],
       "color": "Amarelo",
       "image": "/img/body-leopardo.png",
@@ -53,7 +53,7 @@
     {
       "id": "6",
       "name": "Casaco Pelos",
-      "price": "R$ 398,00",
+      "price": "398,00",
       "parcelamento": ["até 5x de R$30,00"],
       "color": "Rosa",
       "image": "/img/casaco-pelos.png",
@@ -63,7 +63,7 @@
     {
       "id": "7",
       "name": "Cropped Stripes",
-      "price": "R$ 120,00",
+      "price": "120,00",
       "parcelamento": ["até 3x de R$40,00"],
       "color": "Amarelo",
       "image": "/img/cropped-stripes.png",
@@ -73,7 +73,7 @@
     {
       "id": "8",
       "name": "Camisa Transparente",
-      "price": "R$ 398,00",
+      "price": "398,00",
       "parcelamento": ["até 5x de R$30,00"],
       "color": "Preto",
       "image": "/img/camisa-transparente.png",
@@ -83,7 +83,7 @@
     {
       "id": "9",
       "name": "Pochete Clutch",
-      "price": "R$ 99,90",
+      "price": "99,90",
       "parcelamento": ["até 3x de R$33,30"],
       "color": "Preto",
       "image": "/img/pochete-clutch.png",
