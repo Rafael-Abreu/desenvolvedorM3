@@ -1,4 +1,3 @@
-import { filterFunction } from "./filter";
 import { loadMore } from "./loadMore";
 import { ordanateFunction } from "./ordenate";
 
@@ -19,7 +18,7 @@ function eventListener(){
   window.addEventListener('DOMContentLoaded', () => {
     loadJSON();
     loadBag();
-    filterFunction();
+    // filterFunction();
     loadMore();
     ordanateFunction();
 
@@ -194,3 +193,7 @@ function closeOrderNav() {
 var element = document.querySelector(".dropdown");
 element.classList.remove("appear");
 }
+
+// Filter
+
+
